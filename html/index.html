@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login page</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <section class="left">
+      <img src="../asset/Logo.png" alt="logo" />
+      <p class="heading">For Individuals</p>
+      <p class="writeup">
+        Start benefiting from the wellness experience. For companies looking on
+        increasing productivity, and improving organization wellness.
+      </p>
+      <p class="secwriteup">
+        Inspiring wholesome harmony for the mind, body and spirit, for everyone, everywhere.
+      </p>
+    </section>
+    <section class="right">
+      <form action="">
+        <div class="input-container">
+          <label for="firstName">First Name</label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            placeholder="Tolu"
+          />
+        </div>
+
+        <div class="input-container">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Tolu" />
+        </div>
+
+        <div class="input-container">
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender">
+            <option value="default" disabled selected>Select here</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob"/>
+        </div>
+
+        <div class="input-container">
+          <label for="weight">Weight (KG)</label>
+          <input
+            type="text"
+            id="weight"
+            name="weight"
+            placeholder="Enter Weight"
+          />
+        </div>
+
+        <div class="input-container">
+          <label for="height">Height (CM)</label>
+          <input
+            type="text"
+            id="height"
+            name="height"
+            placeholder="Enter height here.."
+          />
+        </div>
+        <div class="input-container bottom">
+          <label for="activityLevel">Activity Level</label>
+          <select id="activityLevel" name="activityLevel">
+            <option value="default" disabled selected>Select here</option>
+            <option value="sedentary">Sedentary</option>
+            <option value="active">Active</option>
+          </select>
+        </div>
+        <div class="input-container bottom">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter password"
+          />
+        </div>
+        <div>
+          <button type="submit" class="register">Register</button>
+        </div>
+        <div class="privacy">
+          <p> By clicking Register, you agree to our <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a></p>
+        </div>
+      </form>
+    </section>
+    <div class="secprivacy">
+      <p> By clicking Register, you agree to our <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a></p>
+    </div>
+  </body>
+</html>
