@@ -194,7 +194,7 @@ label {
   .passworderr{
     margin-top: -15px;
   }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   body {
     width: 375px;
     height: 1294px;
