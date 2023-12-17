@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;400;500&family=Lato:wght@300;400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <section class="left">
@@ -26,7 +27,7 @@
       </p>
     </section>
     <section class="right">
-      <form action="">
+      <form action="" id="regform">
         <div class="input-container">
           <label for="firstName">First Name</label>
           <input
@@ -34,7 +35,8 @@
             id="firstName"
             name="firstName"
             placeholder="Tolu"
-          />
+            />
+            <p class="firstnamerr"></p>
         </div>
 
         <div class="input-container">
@@ -85,11 +87,13 @@
         <div class="input-container bottom">
           <label for="password">Password</label>
           <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder="Enter password"
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter password"
           />
+          <img class="showimg" src="./asset/show.png" alt="show-icon" >
+          <p class="passworderr"></p>
         </div>
         <div>
           <button type="submit" class="register">Register</button>
