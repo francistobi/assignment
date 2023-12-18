@@ -1,5 +1,3 @@
-const firstname = document.getElementById("firstName").value;
-const lastname = document.getElementById("lastName").value;
 const password = document.getElementById("password");
 const showBtn = document.querySelector(".showimg");
 const passErr = document.querySelector(".passworderr");
@@ -14,7 +12,7 @@ document.getElementById("regform").addEventListener("submit", function (event) {
   event.preventDefault();
   const passworVal = document.getElementById("password").value;
   validatepassword(passworVal);
-  console.log(passworVal);
+  validateFirstName();
 });
 
 function validatepassword(passworVal) {
@@ -30,3 +28,15 @@ function validatepassword(passworVal) {
     return true;
   }
 } //validate the password by checking if it contains some special character
+
+function validateFirstName() {
+  const firstName = document.getElementById("firstName").value;
+  let firReg = /^[A-Z]/;
+  if (!firstName.match(firReg)) {
+    firstNameErr.textContent = "Must start capital letter";
+    return false;
+  } else {
+    firstNameErr.textContent = "";
+    return true;
+  }
+}

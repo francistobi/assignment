@@ -118,6 +118,7 @@ select {
   font-size: 14px;
   color: rgba(115, 115, 115, 1);
   line-height: 20px;
+  border-radius: 2px;
 }
 .input-container {
   width: 238px;
@@ -130,7 +131,7 @@ select {
   width: 500px;
   height: 72px;
 }
-input{
+input {
   font-family: var(--font-1);
 }
 label {
@@ -156,8 +157,8 @@ label {
   color: white;
   /* transition: 0.5s ease-in-out; */
 }
-.register:hover{
-  background-color:rgb(140, 219, 211) ;
+.register:hover {
+  background-color: rgb(140, 219, 211);
 }
 .privacy {
   text-align: center;
@@ -173,27 +174,31 @@ label {
 .secprivacy {
   display: none;
 }
-.showimg{
-    width: 16px;
-    height: 16px;
-    position:relative;
-    top: -32px;
-    right: -470px;
-    cursor: pointer;
-    color: black;
-  }
-  .showimg:hover{
-    color: black;
-  }
-  .passworderr,.firstnamerr{
-    font-size: 10px;
-    color: red;
-    font-family: var(--font-1);
-    font-weight: 300;
-  }
-  .passworderr{
-    margin-top: -15px;
-  }
+.showimg {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: -32px;
+  right: -470px;
+  cursor: pointer;
+  color: black;
+}
+.showimg:hover {
+  background-color: rgb(199, 199, 199);
+}
+.passworderr,
+.firstnamerr {
+  font-size: 12px;
+  color: rgb(206, 0, 0);
+  font-family: var(--font-1);
+  font-weight: 300;
+}
+.firstnamerr  {
+  font-size: 10px;
+}
+.passworderr{
+margin-top: -15px;
+}
 @media screen and (max-width: 500px) {
   body {
     width: 375px;
@@ -207,22 +212,23 @@ label {
   .left {
     width: 327px;
     margin-top: 74px;
-    margin-left: 28px;
-    margin-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: -10px;
   }
   .right {
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     padding: 24px;
-    width: 92%;
+    width: 90%;
     height: 870px;
-    margin-left: 40px;
-    margin-right: 24px;
+    /* margin: 0 auto; */
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 138px;
     margin-top: -70px;
     border-radius: 6px;
@@ -286,10 +292,6 @@ label {
     height: 48px;
     margin-top: 8px;
     padding: 14px 16px;
-    border: 1px solid rgb(216, 216, 216);
-    font-weight: 300;
-    font-size: 14px;
-    color: rgba(115, 115, 115, 1);
     line-height: 20px;
   }
   .register {
@@ -323,8 +325,11 @@ label {
   :not(:first-of-type):not(:nth-of-type(2)).input-container {
     margin-top: -10px;
   }
-  .showimg{
+  .showimg {
     position: relative;
     left: 270px;
+  }
+  .showimg:hover {
+    background-color: rgb(199, 199, 199);
   }
 }
