@@ -155,10 +155,11 @@ label {
   background-color: rgba(46, 196, 182, 1);
   border: none;
   color: white;
-  /* transition: 0.5s ease-in-out; */
+ transition: background-color 0.3s, transform 0.9s;
 }
 .register:hover {
-  background-color: rgb(140, 219, 211);
+   background-color: rgb(15, 158, 144);
+  transform: scale(1.01);
 }
 .privacy {
   text-align: center;
