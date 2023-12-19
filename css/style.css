@@ -49,6 +49,12 @@ h6 {
 }
 /* css reset */
 body {
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainbod{
   width: 1300px;
   height: 100%;
   background-color: var(--bg-color);
@@ -204,6 +210,15 @@ color: red;
 }
 @media screen and (max-width: 500px) {
   body {
+    width: 375px;
+    height: 1294px;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainbod{
     width: 375px;
     height: 1294px;
     background-color: var(--bg-color);
