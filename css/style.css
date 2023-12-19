@@ -192,15 +192,17 @@ label {
   font-size: 12px;
   color: rgb(206, 0, 0);
   font-family: var(--font-1);
-  font-weight: 300;
+  font-weight: 700;
 }
 .firstnamerr  {
   font-size: 10px;
+  color: red;
 }
 .passworderr{
 margin-top: -15px;
+color: red;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
   body {
     width: 375px;
     height: 1294px;
@@ -220,14 +222,14 @@ margin-top: -15px;
   .right {
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
-    /* display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; */
+    flex-wrap: wrap;
     padding: 24px;
     width: 90%;
     height: 870px;
-    /* margin: 0 auto; */
+    margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 138px;
